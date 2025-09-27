@@ -1,0 +1,70 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python3 preprocess.py
+    deps:
+    - path: preprocess.py
+      hash: md5
+      md5: 28d68a339750c731d899f6fc82966407
+      size: 676
+    - path: zomato_df_final_data.csv
+      hash: md5
+      md5: 6bb696eac5889d15f134cee5ff09eb5d
+      size: 2690897
+    outs:
+    - path: data/processed.csv
+      hash: md5
+      md5: ceb6e0079809587eb5b9698e2150a599
+      size: 1860323
+  feature_engineering:
+    cmd: python3 feature_engineering.py
+    deps:
+    - path: data/processed.csv
+      hash: md5
+      md5: ceb6e0079809587eb5b9698e2150a599
+      size: 1860323
+    - path: feature_engineering.py
+      hash: md5
+      md5: bdd9181b84843ffe46a1e65f3c055a54
+      size: 662
+    outs:
+    - path: data/features.csv
+      hash: md5
+      md5: 06888f469e4b301421477f98122a928a
+      size: 1924371
+  train:
+    cmd: python3 train.py
+    deps:
+    - path: train.py
+      hash: md5
+      md5: 3d47ad2e233833e80563b3b480cd9db3
+      size: 5130
+    - path: zomato_df_final_data.csv
+      hash: md5
+      md5: 6bb696eac5889d15f134cee5ff09eb5d
+      size: 2690897
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: c84ecd61cc4806548718a40e7d3614d2
+      size: 1024591
+    - path: results/metrics.json
+      hash: md5
+      md5: 7ecb2c49805ac6a5ed9800c1ce7c6035
+      size: 720
+  evaluate:
+    cmd: python3 evaluate.py
+    deps:
+    - path: evaluate.py
+      hash: md5
+      md5: 33e07b5334f725f95de7a5823d25e14d
+      size: 2207
+    - path: models/model.pkl
+      hash: md5
+      md5: c84ecd61cc4806548718a40e7d3614d2
+      size: 1024591
+    outs:
+    - path: results/predictions.csv
+      hash: md5
+      md5: e87f2e21fa9934d1406328b63526e7ae
+      size: 2055226

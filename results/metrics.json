@@ -1,0 +1,25 @@
+{
+    "Best Regression Model": {
+        "Model": "Linear Regression",
+        "MSE": 0.004282662791805267,
+        "RMSE": 0.0654420567510318,
+        "MAE": 0.028128684586080022,
+        "R2": 0.9792406444223607
+    },
+    "Classification Models": [
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 0.9978813559322034,
+            "Precision": 0.9980506822612085,
+            "Recall": 0.9961089494163424,
+            "F1": 0.997078870496592
+        },
+        {
+            "Model": "Random Forest Classifier",
+            "Accuracy": 0.9957627118644068,
+            "Precision": 0.99609375,
+            "Recall": 0.9922178988326849,
+            "F1": 0.9941520467836257
+        }
+    ]
+}
