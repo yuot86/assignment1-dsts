@@ -1,0 +1,4 @@
+[core]
+    remote = assignment-remote
+['remote "assignment-remote"']
+    url = /tmp/dvc-storage
