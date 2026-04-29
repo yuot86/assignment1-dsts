@@ -27,7 +27,6 @@ The analysis focuses on uncovering patterns, identifying trends, and generating 
 
 ## 📈 Sample Output
 
-*(Add your image here — example below)*
+## 📊 Correlation: Cost vs Votes
 
-```markdown
-![Sample Output](your-image.png)
+![Cost vs Votes](Assignment1_figures/cost-votes-correlation.png)
