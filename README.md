@@ -30,3 +30,4 @@ The analysis focuses on uncovering patterns, identifying trends, and generating 
 ## 📊 Correlation: Cost vs Votes
 
 ![Cost vs Votes](Assignment1_figures/cost-votes-correlation.png)
+**Insight:** The majority of restaurants are concentrated in the lower cost range, with a weak relationship between cost and customer engagement (votes). A small number of high-cost outliers exist but do not consistently attract higher votes.
