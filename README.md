@@ -34,3 +34,5 @@ The analysis focuses on uncovering patterns, identifying trends, and generating 
 **Insight:** The majority of restaurants are concentrated in the lower cost range, with a weak relationship between cost and customer engagement (votes). A small number of high-cost outliers exist but do not consistently attract higher votes.
 
 **Technical Note:** The scatter plot indicates high variance in votes at lower cost levels, suggesting that factors beyond pricing (e.g., location, cuisine, reviews) likely influence customer engagement.
+
+**Business Implication:** Pricing alone is not a strong driver of customer engagement, indicating that restaurants should focus on experience, reviews, and visibility rather than cost positioning.
